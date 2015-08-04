@@ -1,0 +1,27 @@
+{
+  "name": "eee",
+  "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
+  "keywords": [
+    "web"
+  ],
+  "homepage": "",
+  "license": "",
+  "moduleType": "",
+  "main": [
+
+  ],
+  "ignore": [
+    "/.*",
+    "_config.yml",
+    "CNAME",
+    "composer.json",
+    "CONTRIBUTING.md",
+    "docs",
+    "js/tests",
+    "test-infra"
+  ],
+  "dependencies": {
+    "jquery": ">= 1.9.1"
+  }
+}
+

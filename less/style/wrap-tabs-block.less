@@ -1,0 +1,165 @@
+section.wrap-tabs-block {
+  position: relative;
+
+  margin-top: 8px;
+  min-height: 600px;
+
+  .changed-tab-img {
+    position: absolute;
+    top: -160px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  // background: no-repeat url("../../images/wrap-tabs-bg.png") center 30%;
+
+  .tabs-block-title {
+    margin-top: 50px;
+    margin-bottom: 35px;
+
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.75);
+    color:  @white;
+    font-size: 49px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  ul.tabs-list {
+    li {
+        margin-right: 2px;
+        min-width: 230px;
+
+      a {
+        display: inline-block;
+        height: 233px;
+        padding-top: 46px;
+        padding-left: 32px;
+        padding-right: 32px;
+        margin-right: 0;
+        width: 100%;
+
+        border-radius: 0;
+
+        background-color: rgba(255, 255, 255, 0.5);
+
+        text-align: center;
+        
+        span.wrap-tab-t-img {
+          display: block;
+          margin-bottom: 17px;
+        }
+
+        span {
+          color: @mine_shaft;
+          font-size: 31px;
+          font-weight: 700;
+        }
+      }
+
+      &>a:hover {
+        background-color: rgba(255, 255, 255, 0.7);
+      }
+      
+      //задаем бекграунд для активного таба
+      &.active {
+        a {
+          background-color: @white;
+        }
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .tab-content {
+    min-height: 160px;
+    padding: 26px 20px;
+    padding-bottom: 5px;
+
+    background-color: @white;
+
+    .wrap-tabs-description {
+      display: inline-block;
+      width: 73%;
+
+      background: no-repeat url("../../images/all.png") 97% 22%;
+    }
+
+    .item-description {
+      li {
+        height: 32px;
+        margin-right: 1px;
+
+        line-height: 1.9;
+
+        font-size: 13px;
+
+        span {
+          color: @thunderbird;
+          font-weight: 700;
+        }
+      }
+
+      li.terms {
+        position: relative;
+
+        margin-right: 16px;
+
+        background-color: @thunderbird;
+
+        font-size: 15px;
+        font-weight: 600;
+        color: @white;
+
+        &:before {
+          content: ''; 
+    
+          position: absolute; 
+          left: 100%; 
+          top: 0px;  
+
+          border:16px solid transparent;
+          border-left: 10px solid @thunderbird;
+        }
+      }
+    }
+
+    .wrap-cloud-count {
+      display: inline-block;
+      padding-left: 10px;
+
+      .cloud {
+
+        height: 64px;
+        padding-top: 12px;
+        width:163px;
+
+        background: no-repeat url("../../images/cloud.png") right center;
+
+        p {
+          margin-bottom: 0;
+
+          font-size: 27px;
+          font-weight: 700;
+          color: @thunderbird;
+
+          span {
+            margin-left: 14px;
+            font-size: 22px;
+          }
+        }
+      }
+
+      .countdown {
+        p {
+          color: @tundora;
+          font-size: 14px;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
