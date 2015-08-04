@@ -2448,10 +2448,11 @@ section.wrap-tabs-block {
   position: relative;
   min-height: 600px;
   margin-top: 8px;
+  overflow: hidden;
 }
 section.wrap-tabs-block .changed-tab-img {
   position: absolute;
-  top: -160px;
+  top: 0;
   right: 0;
   bottom: 0;
   left: 0;
